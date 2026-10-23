@@ -1,0 +1,30 @@
+node_modules/
+.env
+npm-debug.log*
+
+# Dependencies
+node_modules/
+frontend/node_modules/
+backend/node_modules/
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# Build outputs
+frontend/dist/
+backend/dist/
+
+# Local admin password files
+admin-password-temp.txt
+backend/admin-password-temp.txt
+
+# Logs
+*.log
+npm-debug.log*
+
+# Local editor and OS files
+.vscode/
+.DS_Store
+Thumbs.db
