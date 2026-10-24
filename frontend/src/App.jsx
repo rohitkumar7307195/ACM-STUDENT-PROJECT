@@ -3,7 +3,7 @@ import { useState } from "react";
 import "./App.css";
 import AdminDashboard from "./AdminDashboard";
 
-const API_URL = "http://localhost:5000/api/registrations";
+const API_URL = "https://acm-student-project.onrender.com/api/registrations";
 
 const activities = [
   {

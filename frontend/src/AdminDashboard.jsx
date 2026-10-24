@@ -2,7 +2,7 @@
 import { useCallback, useEffect, useState } from "react";
 import "./AdminDashboard.css";
 
-const API_BASE = "http://localhost:5000/api/admin";
+const API_BASE = "https://acm-student-project.onrender.com/api/admin";
 const TOKEN_KEY = "acm_admin_token";
 
 const YEARS = ["1st year", "2nd year", "3rd year", "4th year", "Other"];
