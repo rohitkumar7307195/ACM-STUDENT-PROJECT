@@ -1,5 +1,6 @@
 
 const express = require("express");
+
 const mongoose = require("mongoose");
 const cors = require("cors");
 require("dotenv").config();
@@ -8,6 +9,7 @@ const registrationRoutes = require("./routes/registrationRoutes");
 const adminRoutes = require("./routes/adminRoutes");
 
 const app = express();
+app.set("trust proxy", 1);
 const PORT = process.env.PORT || 5000;
 
 // Middleware
