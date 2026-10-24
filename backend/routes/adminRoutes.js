@@ -67,14 +67,7 @@ router.post("/login", checkAdminConfig, loginLimiter, async (req, res) => {
     }
 
     // Temporary diagnostics. Never log passwords, hashes, or tokens.
-    console.log("ADMIN LOGIN DIAGNOSTICS:", {
-      cwd: process.cwd(),
-      usernameMatches,
-      passwordMatches,
-      passwordProvided: password.length > 0,
-      hashConfigured: Boolean(process.env.ADMIN_PASSWORD_HASH),
-      hashLength: (process.env.ADMIN_PASSWORD_HASH || "").length,
-    });
+    
 
     if (!usernameMatches || !passwordMatches) {
       return res.status(401).json({
